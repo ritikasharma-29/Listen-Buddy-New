@@ -21,7 +21,7 @@ function JoinRoom() {
 
         try {
             const response = await fetch(
-                "http://127.0.0.1:5000/api/rooms/join",
+                "https://listen-buddy-backend.onrender.com/api/rooms/join",
                 {
                     method: "POST",
                     headers: {

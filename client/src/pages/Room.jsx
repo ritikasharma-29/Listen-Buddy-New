@@ -30,7 +30,7 @@ function Room() {
     const fetchRoom = async () => {
         try {
             const response = await fetch(
-                `http://127.0.0.1:5000/api/rooms/${roomId}`
+                `https://listen-buddy-backend.onrender.com/api/rooms/${roomId}`
             );
 
             const data = await response.json();
@@ -442,7 +442,7 @@ const handleRemoteSeek = (data) => {
 
         try {
             const response = await fetch(
-                `http://127.0.0.1:5000/api/rooms/${roomId}/songs`,
+                `https://listen-buddy-backend.onrender.com/api/rooms/${roomId}/songs`,
                 {
                     method: "POST",
 
@@ -512,7 +512,7 @@ const handleRemoteSeek = (data) => {
     const handleRemoveSong = async (songId) => {
     try {
         const response = await fetch(
-            `http://127.0.0.1:5000/api/rooms/${roomId}/songs/${songId}`,
+            `https://listen-buddy-backend.onrender.com/api/rooms/${roomId}/songs/${songId}`,
             {
                 method: "DELETE"
             }
